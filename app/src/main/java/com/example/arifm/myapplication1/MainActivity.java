@@ -50,6 +50,21 @@ public class MainActivity extends AppCompatActivity {
            }
         });
 
+        tapMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mConditionRef.setValue("Tap me if you dare");
+            }
+        });
+
+       /* add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mConditionRef.setValue("Add numbers");
+            }
+        });*/
+
+
 
     }
 
@@ -61,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void addNumbers(View v)
     {
+        mConditionRef.setValue("Add Numbers");
+
         EditText et;
         et = (EditText) findViewById(R.id.editText);
         int inputNumber = Integer.parseInt(et.getText().toString());
@@ -71,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         //editText.setEnabled(false);     // sets background grey
         //String value = editText.getText().toString();
         editText.setText("" + number);
+
 
     }
 

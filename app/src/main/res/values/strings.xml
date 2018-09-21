@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application1</string>
+    <string name="answer">answer</string>
+    <string name="type_a_number">type a number</string>
+    <string name="add">add</string>
+    <string name="tap_me">tap_me</string>
 </resources>
